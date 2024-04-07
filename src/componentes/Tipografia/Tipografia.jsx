@@ -2,7 +2,13 @@ import styled from '@emotion/styled';
 
 const componentes = {
     h1: 'h1',
+    h2: 'h2',
+    h3: 'h3',
     body: 'p',
+    bodyBold: 'strong',
+    body2: 'p',
+    body2Bold: 'strong',
+    legenda: 'p',
 };
 
 const estilos = {
