@@ -16,9 +16,10 @@ const tema = {
             c: '',
         },
         neutras: {
-            a: '',
+            a: '#373737',
             b: '',
             c: '',
+            d: '',
         },
         dark: {
             a: '',
@@ -34,5 +35,5 @@ const tema = {
 };
 
 export const ProvedorTema = ({ children }) => {
-    return <ThemeProvider>{children}</ThemeProvider>;
+    return <ThemeProvider theme={tema}>{children}</ThemeProvider>;
 };
