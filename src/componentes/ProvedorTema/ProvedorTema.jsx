@@ -6,26 +6,30 @@ const tema = {
         atencao: '',
         focus: '',
         primarias: {
-            a: '',
+            a: '#5754ED',
             b: '',
-            c: ''
-        }
+            c: '',
+        },
         secundarias: {
-            a: '',
+            a: '#EBEAF9',
             b: '',
-            c: ''
-        }
+            c: '',
+        },
         neutras: {
             a: '',
             b: '',
-            c: ''
-        }
+            c: '',
+        },
         dark: {
             a: '',
             b: '',
-        }
-    }
-}
+        },
+    },
+    espacamentos: {
+        s: '16px',
+        l: '32px',
+    },
+};
 
 export const ProvedorTema = ({ children }) => {
     return <ThemeProvider>{children}</ThemeProvider>;
