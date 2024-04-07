@@ -7,7 +7,9 @@ function App() {
         <ProvedorTema>
             <Estilos />
             <Card>
-                <h1>Freelando</h1>
+                <Tipografia variante='h3' componente='h1'>
+                    Freelando
+                </Tipografia>
             </Card>
         </ProvedorTema>
     );
