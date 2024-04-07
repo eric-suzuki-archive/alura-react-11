@@ -6,26 +6,32 @@ const tema = {
         atencao: '',
         focus: '',
         primarias: {
-            a: '',
+            a: '#5754ED',
             b: '',
-            c: ''
-        }
+            c: '',
+        },
         secundarias: {
-            a: '',
+            a: '#EBEAF9',
             b: '',
-            c: ''
-        }
+            c: '',
+        },
         neutras: {
             a: '',
             b: '',
-            c: ''
-        }
+            c: '',
+        },
         dark: {
             a: '',
             b: '',
-        }
-    }
-}
+        },
+    },
+    espacamentos: {
+        xs: '8px',
+        s: '16px',
+        l: '32px',
+    },
+    fontFamily: "'Montserrat', sans-serif",
+};
 
 export const ProvedorTema = ({ children }) => {
     return <ThemeProvider>{children}</ThemeProvider>;
