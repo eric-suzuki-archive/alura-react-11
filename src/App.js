@@ -1,3 +1,4 @@
+import { CampoTexto } from './componentes/CampoTexto/CampoTexto';
 import { Card } from './componentes/Card/Card';
 import { Estilos } from './componentes/EstilosGlobais/Estilos';
 import { ProvedorTema } from './componentes/ProvedorTema/ProvedorTema';
