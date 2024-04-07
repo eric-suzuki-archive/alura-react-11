@@ -38,6 +38,28 @@ const BotaoEstilizado = styled.button`
 export const ListaSupensa = ({ titulo, opcoes }) => {
     const [estaAberta, alternarVisibilidade] = useState(false);
 
+    const [opcaoFocada, setOpcaoFocada] = useState(null);
+
+    const manipularTeclaDoTeclado = (evento) => {
+        alternarVisibilidade(true)
+        switch (evento.key) {
+            case value 'ArrowDown':
+                evento.preventDefault()
+                setOpcaoFocada(focoAntigo => {
+                    if (!focoAntigo) {
+                        return 0;
+                    }
+
+                    return focoAntigo +=1
+                })
+                break;
+
+            default:
+                break;
+        }
+
+    }
+
     return (
         <LabelEstilizada>
             {titulo}
@@ -51,11 +73,17 @@ export const ListaSupensa = ({ titulo, opcoes }) => {
                 </div>
             </BotaoEstilizado>
             {estaAberta && (
-                <ul>
-                    {opcoes.map((opcao) => (
-                        <li key={opcao.value}>{opcao.text}</li>
+                <ListaSuspensaEstilizada>
+                    {opcoes.map((opcao, index) => (
+                        <ItemListaSuspensaEstilizado
+                            key={opcao.value}
+                            focoAtivo={index === opcaoFocada}
+                            onClick={() => setOpcaoSelecionada(opcao)}
+                        >
+                            {opcao.text}
+                        </ItemListaSuspensaEstilizado>
                     ))}
-                </ul>
+                </ListaSuspensaEstilizada>
             )}
         </LabelEstilizada>
     );
